@@ -1,0 +1,1 @@
+# @rivuty/oxlint-config
