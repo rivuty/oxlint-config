@@ -1,8 +1,13 @@
 {
   "name": "@rivuty/oxlint-config",
   "version": "0.0.0",
+  "scripts": {
+    "format": "oxfmt --check",
+    "format:fix": "oxfmt --write"
+  },
   "devDependencies": {
-    "@types/node": "^25.5.0"
+    "@types/node": "^25.5.0",
+    "oxfmt": "^0.42.0"
   },
   "packageManager": "pnpm@10.32.1"
 }
