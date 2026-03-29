@@ -7,10 +7,12 @@
     "lint:fix": "oxlint --fix",
     "format": "oxfmt --check",
     "format:fix": "oxfmt --write",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "verify": "run-p -c lint format typecheck"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
+    "npm-run-all2": "^8.0.4",
     "oxfmt": "^0.42.0",
     "oxlint": "^1.57.0",
     "oxlint-tsgolint": "^0.18.1",
