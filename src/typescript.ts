@@ -17,6 +17,7 @@ export const typescript = defineConfig({
     'import/no-named-export': 'off',
     'import/prefer-default-export': 'off',
     'sort-imports': 'off',
+    'sort-keys': 'off',
     'typescript/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
     'typescript/no-import-type-side-effects': 'off',
   },
