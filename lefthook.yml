@@ -2,3 +2,18 @@ commit-msg:
   commands:
     commitlint:
       run: pnpm exec commitlint --edit {1}
+
+pre-commit:
+  parallel: true
+  commands:
+    oxlint:
+      glob: '**/*.ts'
+      run: pnpm exec oxlint {staged_files}
+    oxfmt:
+      glob: '**/*.{json,md,yml,ts}'
+      run: pnpm exec oxfmt --check {staged_files}
+
+pre-push:
+  commands:
+    typecheck:
+      run: pnpm typecheck
