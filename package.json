@@ -1,8 +1,20 @@
 {
   "name": "@rivuty/oxlint-config",
   "version": "0.0.0",
+  "description": "Shared oxlint configurations for TypeScript projects",
+  "keywords": [
+    "linting",
+    "oxc",
+    "oxlint",
+    "oxlint-config",
+    "typescript"
+  ],
   "license": "MIT",
   "author": "Oleg Michailov",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rivuty/oxlint-config.git"
+  },
   "files": [
     "dist"
   ],
@@ -13,6 +25,9 @@
       "import": "./dist/index.js"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "vite build",
     "lint": "oxlint",
@@ -20,7 +35,8 @@
     "format": "oxfmt --check",
     "format:fix": "oxfmt --write",
     "typecheck": "tsc",
-    "verify": "run-p -c lint format typecheck"
+    "verify": "run-p -c lint format typecheck",
+    "release": "release-it"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
@@ -31,6 +47,7 @@
     "oxfmt": "^0.42.0",
     "oxlint": "^1.57.0",
     "oxlint-tsgolint": "^0.18.1",
+    "release-it": "^19.2.4",
     "typescript": "^6.0.2",
     "vite": "^8.0.3"
   },
