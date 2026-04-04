@@ -12,6 +12,7 @@ export const vitest = defineConfig({
         'max-statements': 'off',
         'vitest/no-importing-vitest-globals': 'off',
         'vitest/prefer-describe-function-title': 'off',
+        'vitest/require-test-timeout': 'off',
       },
     },
   ],
