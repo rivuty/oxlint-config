@@ -1,6 +1,6 @@
-import { defineConfig } from 'oxlint';
+import { defineConfig, type OxlintConfig } from 'oxlint';
 
-export const config = defineConfig({
+export const config: OxlintConfig = defineConfig({
   overrides: [
     {
       files: ['*.config.ts'],
