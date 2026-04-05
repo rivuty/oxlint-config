@@ -11,6 +11,11 @@ export const typescript: OxlintConfig = defineConfig({
     suspicious: 'error',
   },
   plugins: ['eslint', 'import', 'oxc', 'promise', 'typescript', 'unicorn'],
+  options: {
+    denyWarnings: true,
+    reportUnusedDisableDirectives: 'error',
+    typeAware: true,
+  },
   rules: {
     'capitalized-comments': 'off',
     'id-length': ['error', { exceptionPatterns: ['[A-Z]'], exceptions: ['_', 'i'] }],
