@@ -37,6 +37,7 @@
     "format:fix": "oxfmt --write",
     "typecheck": "tsc",
     "verify": "run-p -c lint format typecheck",
+    "prepublishOnly": "run-p -c verify build",
     "release": "release-it"
   },
   "devDependencies": {
