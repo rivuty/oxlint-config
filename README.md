@@ -5,9 +5,9 @@ Shared [oxlint](https://oxc.rs/docs/guide/usage/linter) configurations.
 ## Installation
 
 ```sh
-npm add -D @rivuty/oxlint-config oxlint
+npm add -D @rivuty/oxlint-config oxlint oxlint-tsgolint
 # or
-pnpm add -D @rivuty/oxlint-config oxlint
+pnpm add -D @rivuty/oxlint-config oxlint oxlint-tsgolint
 ```
 
 ## Usage
